@@ -1,0 +1,27 @@
+1. The task in the beginning
+2. Container ⇒ padding & margin
+3. decoration in Container
+4. Drawer 
+5. App bar ⇒ Leading, Actions
+6. Single Child Scroll View
+7. List View
+8. list tile
+9. Expanded
+10. Stack
+11. Alignment
+12. Positioned
+13. Flutter inspector
+--
+14. State full
+15. Buttons
+    1. Elevated
+    2. Text Button
+    3. Outlined
+    4. Floating Action
+    5. Icon Button
+16. Navigation
+17. passing data
+18. Text field
+19. Form
+20. Text Form Field
+21. decoration in Text Form Field
