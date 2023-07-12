@@ -132,12 +132,15 @@ import 'app/app.dart';
 
 void main() {
   runApp(const RootWidget());
-}
 
-
-
-
-
-int getString() {
+  var p = Person('name', 4);
+}int getString() {
   return 0;
+}
+class Person{
+  final String name;
+  final int age;
+
+  Person(this.name, this.age);
+
 }

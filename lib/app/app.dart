@@ -8,7 +8,7 @@ class RootWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return   MaterialApp(
+    return   const MaterialApp(
       title: 'Fluter Up Academy',
       debugShowCheckedModeBanner: false,
       home: SafeArea(
