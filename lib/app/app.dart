@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../inteactive _widgets/login_sreen.dart';
+import '../more_widgets/more_widgets.dart';
 
 
 class RootWidget extends StatelessWidget {
@@ -8,11 +8,11 @@ class RootWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return   const MaterialApp(
+    return    MaterialApp(
       title: 'Fluter Up Academy',
       debugShowCheckedModeBanner: false,
       home: SafeArea(
-        child: LoginScreen(),)
+        child: MoreWidgets(),)
     );
   }
 }

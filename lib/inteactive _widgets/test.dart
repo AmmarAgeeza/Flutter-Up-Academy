@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
   TextEditingController emailController = TextEditingController();
-String email;
-String password;
-  Home(this.email,this.password,{super.key});
+  String email;
+  String password;
+  Home(this.email, this.password, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -44,11 +44,11 @@ String password;
               //suffixIcon: const Icon(Icons.remove_red_eye),
             ),
           ),
-           Text(
+          Text(
             email,
             style: TextStyle(fontSize: 35),
           ),
-           Text(
+          Text(
             password,
             style: TextStyle(fontSize: 35),
           ),
