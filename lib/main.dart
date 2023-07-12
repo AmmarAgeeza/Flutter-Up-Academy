@@ -134,13 +134,15 @@ void main() {
   runApp(const RootWidget());
 
   var p = Person('name', 4);
-}int getString() {
+}
+
+int getString() {
   return 0;
 }
-class Person{
+
+class Person {
   final String name;
   final int age;
 
   Person(this.name, this.age);
-
 }
