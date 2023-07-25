@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
 
-import '../async_programming_session/future_flutter.dart';
-import '../async_programming_session/shared_pref.dart';
-import '../more_widgets/more_widgets.dart';
+import '../state_management_session/counter_example/home.dart';
 
 class RootWidget extends StatelessWidget {
   const RootWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  const MaterialApp(
+    return   MaterialApp(
         title: 'Fluter Up Academy',
         debugShowCheckedModeBanner: false,
         home: SafeArea(
-          child: FutureApp(),
+          child: Counter(),
         ));
   }
 }
