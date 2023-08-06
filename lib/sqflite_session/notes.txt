@@ -1,0 +1,17 @@
+CRUD Operations
+1.Create
+2.Read
+3.Update
+4.Delete
+----------------------------------------------------------------
+Steps:
+1.Create DataBase
+2.Create Table
+3.CRUD
+    3.1 Insert
+    3.2 Update
+    3.3 Delete
+    3.4 Get
+----------------------------------------------------------------
+Mapping
+Self Branding on LinkedIn
