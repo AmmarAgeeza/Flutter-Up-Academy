@@ -13,7 +13,7 @@ class ApiCubit extends Cubit<ApiState> {
     var data = [];
     // final response =
     await Dio()
-        .get('https://jsonplaceholder.typicode.com/albums')
+        .get('https://jsonplaceholder.typicode.com/albums',)
         .then((value) {
       print(value.statusCode);
       data = value.data;
