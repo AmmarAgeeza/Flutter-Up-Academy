@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_ui/api_session/cubit/api_cubit.dart';
 import 'package:flutter_ui/api_session_part2/presentation/cubit/chef_cubit.dart';
+import 'package:flutter_ui/api_session_part3/features/test/presentation/cubit/test_cubit.dart';
 import 'package:flutter_ui/sqflite_session/cubit/sqflite_cubit.dart';
 
 import '../api_session_part2/presentation/screens/api_session_part2.dart';
+import '../api_session_part3/features/test/presentation/screens/test_screen.dart';
 
 class RootWidget extends StatelessWidget {
   const RootWidget({super.key});
@@ -22,13 +24,16 @@ class RootWidget extends StatelessWidget {
         BlocProvider(
           create: (context) => ChefCubit()..chefDelte(),
         ),
+        BlocProvider(
+          create: (context) => TestCubit()..getDataOfChef(),
+        ),
         
       ],
       child: const MaterialApp(
           title: 'Fluter Up Academy',
           debugShowCheckedModeBanner: false,
           home: SafeArea(
-            child: ApiSessionPart2(),
+            child: TestScreen(),
           )),
     );
   }
