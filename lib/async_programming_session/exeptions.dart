@@ -29,3 +29,25 @@ class ServerException implements Exception {
 
   ServerException(this.message);
 }
+
+
+void mainMethod(){
+  try{
+    some();
+  }
+  on UserDivededByZero catch(e){
+    print(e.message);
+  }
+}
+void some(){
+  //action
+int  num =0;
+  if (num == 0){
+    throw UserDivededByZero('user divied number by zero');
+  }
+}
+class UserDivededByZero implements Exception{
+  final String message ;
+
+  UserDivededByZero(this.message);
+}

@@ -6,6 +6,7 @@ import 'package:flutter_ui/api_session_part3/features/test/presentation/cubit/te
 import 'package:flutter_ui/sqflite_session/cubit/sqflite_cubit.dart';
 
 import '../api_session_part2/presentation/screens/api_session_part2.dart';
+import '../api_session_part3/core/services/service_locator.dart';
 import '../api_session_part3/features/test/presentation/screens/test_screen.dart';
 
 class RootWidget extends StatelessWidget {
@@ -25,7 +26,7 @@ class RootWidget extends StatelessWidget {
           create: (context) => ChefCubit()..chefDelte(),
         ),
         BlocProvider(
-          create: (context) => TestCubit()..getDataOfChef(),
+          create: (context) => sl<TestCubit>()..signIn(),
         ),
         
       ],
