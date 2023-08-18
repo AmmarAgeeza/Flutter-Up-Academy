@@ -6,6 +6,8 @@ class EndPoint {
   static const String chefGet = 'chef/get-chef/';
   static const String albums = 'albums';
   static const String baseURlFake = 'https://jsonplaceholder.typicode.com/';
+    static const String sendCode = 'chef/send-code';
+
   static  String getChefDataEndPoint(id){
     return '$chefGet$id';
   }

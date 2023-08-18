@@ -4,6 +4,7 @@ class EndPoints {
   static const String chefChangePassword = 'chef/change-password';
   static const String chefDelete = 'chef/delete';
   static const String chefGet = 'chef/get-chef/';
+  static const String sendCode = 'chef/send-code';
   static  String getChefDataEndPoint(id){
     return '$chefGet$id';
   }

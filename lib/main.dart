@@ -8,6 +8,11 @@ import 'app/app.dart';
 
 void main()async {
   WidgetsFlutterBinding.ensureInitialized();
+  try{dividedbyNum(1,0);}
+  on InvalidException catch (error){
+    print(error.message);
+  }
+  catch(e){print(e.toString());}
   // cascade notation
   Bloc.observer = MyBlocObserver();
   setup();
@@ -24,6 +29,16 @@ void main()async {
 }
 
 
+void dividedbyNum(num1,num2){
+if(num2==0){
+throw InvalidException('invalid number');
+}
+var div = num1/num2;
+print(div);
+}
+class InvalidException implements Exception{
+  final String message;
 
-
+  InvalidException(this.message);
+}
 // https://jsonplaceholder.typicode.com/albums
