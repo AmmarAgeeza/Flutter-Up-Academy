@@ -6,9 +6,8 @@ import 'package:flutter_ui/api_session_part3/core/services/service_locator.dart'
 import 'package:flutter_ui/api_session_part3/features/test/presentation/cubit/test_cubit.dart';
 import 'package:flutter_ui/sqflite_session/cubit/sqflite_cubit.dart';
 
+import '../animation/AnimatedPaddingExample.dart';
 import '../api_session_part3/features/send_code_forgotten_password/presentation/cubit/send_code_cubit.dart';
-import '../api_session_part3/features/send_code_forgotten_password/presentation/screens/send__code_forget_password.dart';
-import '../api_session_part3/features/test/presentation/screens/test_screen.dart';
 
 class RootWidget extends StatelessWidget {
   const RootWidget({super.key});
@@ -37,8 +36,8 @@ class RootWidget extends StatelessWidget {
           title: 'Fluter Up Academy',
           debugShowCheckedModeBanner: false,
           home: SafeArea(
-            child: SendCodeForgetPassword(),
-          )),
+            child: AnimatedPAddingExample(),
+          ),),
     );
   }
 }
